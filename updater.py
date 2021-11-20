@@ -49,4 +49,4 @@ if __name__ == "__main__":
                     writer.writerows(data)
 
         # sleep for one conceptual hour
-        sleep(0.5)
+        sleep(2)

@@ -8,7 +8,7 @@ GreenEnergyShare = float
 
 def best_server_location(
     regions_to_consider: Set[Region], nuclear_is_green=False
-) -> List[Tuple[Region, GreenEnergyShare]]:
+) -> Tuple[List[Tuple[Region, GreenEnergyShare]], str]:
     "Calculate the region with the best available energy mix."
 
     ranking: List[Tuple[Region, GreenEnergyShare]] = []
@@ -20,7 +20,8 @@ def best_server_location(
     # calculate share of green energy for each region
     for region in regions_to_consider:
         data = data_of_region(region)
-        latest_data = [to_int(b) for b in data[-1]]
+        timestamp = data[-1][1]
+        latest_data = [to_int(b) for b in data[-1][2:]]
         total_energy = sum(latest_data)
         green_energy = sum(
             [a for idx, a in enumerate(latest_data) if idx in GREEN_ENERGY_SOURCES]
@@ -35,7 +36,7 @@ def best_server_location(
     # sort the countries by the share of renewable energy
     sorted_ranking = sorted(ranking, key=lambda x: x[1], reverse=True)
 
-    return sorted_ranking
+    return (sorted_ranking, timestamp)
 
 
 def data_of_region(region: Region) -> List[str]:
@@ -50,7 +51,7 @@ def data_of_region(region: Region) -> List[str]:
             for row in reader:
                 if "-" in row:
                     break
-                data.append(row[2:])
+                data.append(row)
         return data
     except FileNotFoundError:
         print(f"Region '{region}' is not available")

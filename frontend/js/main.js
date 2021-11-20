@@ -22,6 +22,7 @@ nuclearField = document.getElementById("nuclear")
 
 function refresh() {
     tableContent = document.getElementById("table-content")
+    timestampField = document.getElementById("timestamp-field")
 
     awsChecked = awsField.checked
     azureChecked = azureField.checked
@@ -117,7 +118,12 @@ function refresh() {
     xhr.onreadystatechange = function() { // Call a function when the state changes.
         if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
             response = JSON.parse(this.responseText)
-            response.forEach(obj => {
+            timestamp = response.timestamp
+            data = response.data
+
+            timestampField.innerHTML = timestamp
+
+            data.forEach(obj => {
                 country = obj.country
                 percentage = obj.percentage
                 provider = obj.cloud_provider
@@ -167,8 +173,8 @@ function refresh() {
 						      <td>${country}</td>
 						      <td class="${fontColorClass} font-weight-bold">${percentage}</td>
 						    </tr>`
-            });
-        }
+                 });
+            }
     }
 
     xhr.send(JSON.stringify({

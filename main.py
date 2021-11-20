@@ -13,6 +13,7 @@ class Body(BaseModel):
     cloud_provider: str
     nuclear_is_green = False
 
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -21,16 +22,19 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 @app.post("/ranking")
 async def root(body: Body):
-    ranking = best_server_location(
+    ranking, timestamp = best_server_location(
         body.countries, nuclear_is_green=body.nuclear_is_green
     )
-    response = construct_response(ranking, body.cloud_provider)
+    response = construct_response(ranking, body.cloud_provider, timestamp)
     return response
 
 
-def construct_response(ranking: List[Tuple[str, float]], selected_cloud_provider: str):
+def construct_response(
+    ranking: List[Tuple[str, float]], selected_cloud_provider: str, timestamp: str
+):
     CLOUD_REGIONS: Dict[str, List[Tuple[str, str]]] = {
         "AT": [
             ("Azure", "Austria East"),
@@ -79,13 +83,13 @@ def construct_response(ranking: List[Tuple[str, float]], selected_cloud_provider
         ],
     }
 
-    response = []
+    response = {"timestamp": timestamp, "data": []}
 
     for country, percentage in ranking:
         cloud_regions = CLOUD_REGIONS[country]
         for cloud_provider, region in cloud_regions:
             if cloud_provider == selected_cloud_provider:
-                response.append(
+                response["data"].append(
                     {
                         "country": country,
                         "percentage": percentage,
