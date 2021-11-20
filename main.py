@@ -1,15 +1,17 @@
+from typing import List
+from fastapi import FastAPI
+from pydantic import BaseModel
+
 from energy_calculator import best_server_location
 
+app = FastAPI()
 
-if __name__ == "__main__":
-    print(
-        best_server_location(
-            {"AT", "CH", "DE", "DK", "ES", "FI", "FR", "GR", "IE", "NO"},
-            nuclear_is_green=True,
-        )
-    )
-    print(
-        best_server_location(
-            {"AT", "CH", "DE", "DK", "ES", "FI", "FR", "GR", "IE", "NO"},
-        )
-    )
+
+class Body(BaseModel):
+    countries: List[str]
+    nuclear_is_green = False
+
+
+@app.post("/ranking")
+async def root(body: Body):
+    return best_server_location(body.countries, nuclear_is_green=body.nuclear_is_green)
