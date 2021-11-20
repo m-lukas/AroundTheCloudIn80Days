@@ -11,99 +11,173 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	
 	<link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/headers.css">
+
+    <link rel="icon" type="image/vnd.microsoft.icon" href="assets/favicon.ico">
 
 	</head>
 	<body>
-	<section class="ftco-section">
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                    <img src="assets/logo.png" alt="logo" height="64">
+                    <span class="fs-4">Around the cloud in 80 days</span>
+                </a>
+            </header>
+        </div>
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-6 text-center mb-5">
-					<h2 class="heading-section">Cloud Energy Ranking</h2>
+                    <div>
+                        <fieldset class="form-group">
+                          <div class="row">
+                            <legend class="col-form-label col-sm-4 pt-0">Select provider...</legend>
+                            <div class="col-sm-10">
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="aws-radio" value="aws" checked>
+                                <label class="form-check-label" for="aws-radio">
+                                  AWS
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="azure-radio" value="azure">
+                                <label class="form-check-label" for="azure-radio">
+                                  Azure
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gcp-radio" value="gcp">
+                                <label class="form-check-label" for="gcp-radio">
+                                    Google Cloud
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+                        <div class="form-group row">
+                          <div class="col-sm-4">Select contries...</div>
+                          <div class="col-sm-10">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="country-at" checked>
+                              <label class="form-check-label" for="country-at">
+                                AT
+                              </label>
+                              <div class="w-100"></div>
+                              <input class="form-check-input" type="checkbox" id="country-be" checked>
+                              <label class="form-check-label" for="country-be">
+                                BE
+                              </label>
+                              <div class="w-100"></div>
+                              <input class="form-check-input" type="checkbox" id="country-ch" checked>
+                              <label class="form-check-label" for="country-ch">
+                                CH
+                              </label>
+                              <div class="w-100"></div>
+                              <input class="form-check-input" type="checkbox" id="country-de" checked>
+                              <label class="form-check-label" for="country-de">
+                                DE
+                              </label>
+                              <div class="w-100"></div>
+                              <input class="form-check-input" type="checkbox" id="country-dk" checked>
+                              <label class="form-check-label" for="country-dk">
+                                DK
+                              </label>
+                              <div class="w-100"></div>
+                              <input class="form-check-input" type="checkbox" id="country-es" checked>
+                              <label class="form-check-label" for="country-es">
+                                ES
+                              </label>
+                              <div class="w-100"></div>
+                              <input class="form-check-input" type="checkbox" id="country-fi" checked>
+                              <label class="form-check-label" for="country-fi">
+                                FI
+                              </label>
+                              <div class="w-100"></div>
+                              <input class="form-check-input" type="checkbox" id="country-fr" checked>
+                              <label class="form-check-label" for="country-fr">
+                                FR
+                              </label>
+                              <div class="w-100"></div>
+                              <input class="form-check-input" type="checkbox" id="country-ie" checked>
+                              <label class="form-check-label" for="country-ie">
+                                IE
+                              </label>
+                              <div class="w-100"></div>
+                              <input class="form-check-input" type="checkbox" id="country-it" checked>
+                              <label class="form-check-label" for="country-it">
+                                IT
+                              </label>
+                              <div class="w-100"></div>
+                              <input class="form-check-input" type="checkbox" id="country-nl" checked>
+                              <label class="form-check-label" for="country-nl">
+                                NL
+                              </label>
+                              <div class="w-100"></div>
+                              <input class="form-check-input" type="checkbox" id="country-no" checked>
+                              <label class="form-check-label" for="country-no">
+                                NO
+                              </label>
+                              <div class="w-100"></div>
+                              <div class="w-100"></div>
+                              <input class="form-check-input" type="checkbox" id="country-pl" checked>
+                              <label class="form-check-label" for="country-pl">
+                                PL
+                              </label>
+                              <div class="w-100"></div>
+                              <input class="form-check-input" type="checkbox" id="country-se" checked>
+                              <label class="form-check-label" for="country-se">
+                                SE
+                              </label>
+                              <div class="w-100"></div>
+                              <input class="form-check-input" type="checkbox" id="country-uk" checked>
+                              <label class="form-check-label" for="country-uk">
+                                UK
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-4">Nuclear is green...</div>
+                            <div class="col-sm-10">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="nuclear">
+                                <label class="form-check-label" for="nuclear">
+                                  Yes
+                                </label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                          <div class="col-sm-10">
+                            <button id="refresh-button" class="btn btn-custom" onclick="refresh()">Refresh</button>
+                          </div>
+                        </div>
+                    </div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-12">
 					<div class="table-wrap">
 						<table class="table">
-						  <thead class="thead-dark">
+						  <thead class="thead-custom">
 						    <tr>
 						      <th>Cloud Provider</th>
 						      <th>Region</th>
 						      <th>Country</th>
 						      <th>Renewable Energy (%)</th>
-						      <th>&nbsp;</th>
 						    </tr>
 						  </thead>
 						  <tbody id="table-content">
-						    <tr class="alert" role="alert">
-						      <th scope="row">002</th>
-						      <td>Jacob</td>
-						      <td>Thornton</td>
-						      <td>jacobthornton@email.com</td>
-						      <td>
-						      	<a href="#" class="close" data-dismiss="alert" aria-label="Close">
-				            	<span aria-hidden="true"><i class="fa fa-close"></i></span>
-				          	</a>
-				        	</td>
-						    </tr>
-						    <tr class="alert" role="alert">
-						      <th scope="row">003</th>
-						      <td>Larry</td>
-						      <td>the Bird</td>
-						      <td>larrybird@email.com</td>
-						      <td>
-						      	<a href="#" class="close" data-dismiss="alert" aria-label="Close">
-				            	<span aria-hidden="true"><i class="fa fa-close"></i></span>
-				          	</a>
-				        	</td>
-						    </tr>
-						    <tr class="alert" role="alert">
-						      <th scope="row">004</th>
-						      <td>John</td>
-						      <td>Doe</td>
-						      <td>johndoe@email.com</td>
-						      <td>
-						      	<a href="#" class="close" data-dismiss="alert" aria-label="Close">
-				            	<span aria-hidden="true"><i class="fa fa-close"></i></span>
-				          	</a>
-				        	</td>
-						    </tr>
-						    <tr class="alert" role="alert">
-						      <th scope="row">005</th>
-						      <td>Gary</td>
-						      <td>Bird</td>
-						      <td>garybird@email.com</td>
-						      <td>
-						      	<a href="#" class="close" data-dismiss="alert" aria-label="Close">
-				            	<span aria-hidden="true"><i class="fa fa-close"></i></span>
-				          	</a>
-				        	</td>
-						    </tr>
 						  </tbody>
 						</table>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
 
 	<script src="js/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script>
-        tableBody = document.getElementById("table-content")
-
-        cloudProvider = "AWS"
-        region = "eu-central-1"
-        country = "Germany"
-        percentage = "49.5%"
-
-        tableBody.innerHTML += `<tr class="alert" role="alert">
-						      <th scope="row">${cloudProvider}</th>
-						      <td>${region}</td>
-						      <td>${country}</td>
-						      <td>${percentage}</td>
-						    </tr>`
-    </script>
+    <script src="js/main.js"></script>
 	</body>
 </html>
 

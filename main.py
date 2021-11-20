@@ -1,5 +1,6 @@
 from typing import Dict, List, Tuple
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from energy_calculator import best_server_location
@@ -12,6 +13,13 @@ class Body(BaseModel):
     cloud_provider: str
     nuclear_is_green = False
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.post("/ranking")
 async def root(body: Body):
