@@ -1526,7 +1526,7 @@
 
   .table .thead-custom th {
     color: #fff;
-    background-color: #ce2a97;
+    background-color: #ff5b86;
     border-color: #6e7174; }
   
   .table .thead-light th {
@@ -2077,24 +2077,24 @@
 
   .btn-custom {
     color: #fff;
-    background-color: #ce2a97;
-    border-color: #ce2a97; }
+    background-color: #ff5b86;
+    border-color: #ff5b86; }
     .btn-primary:hover {
         color: #fff;
-        background-color: #a1357d;
-        border-color: #a1357d; }
+        background-color: #ffa7be;
+        border-color: #ffa7be; }
     .btn-primary:focus, .btn-primary.focus {
         -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
         box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); }
     .btn-primary.disabled, .btn-primary:disabled {
         color: #fff;
-        background-color: #ce2a97;
-        border-color: #ce2a97; }
+        background-color: #ff5b86;
+        border-color: #ff5b86; }
     .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
     .show > .btn-primary.dropdown-toggle {
         color: #fff;
-        background-color: #0062cc;
-        border-color: #005cbf; }
+        background-color: #eb3566;
+        border-color: #eb3566; }
         .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
         .show > .btn-primary.dropdown-toggle:focus {
         -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);

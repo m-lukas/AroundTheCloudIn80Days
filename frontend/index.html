@@ -21,31 +21,31 @@
             <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
                 <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
                     <img src="assets/logo.png" alt="logo" height="64">
-                    <span class="fs-4">Around the cloud in 80 days</span>
+                    <span class="fs-1 font-weight-bold">Cloud Energy Mix</span>
                 </a>
             </header>
         </div>
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col-md-6 text-center mb-5">
+				<div class="col-md-10 text-center mb-5">
                     <div>
                         <fieldset class="form-group">
                           <div class="row">
-                            <legend class="col-form-label col-sm-4 pt-0">Select provider...</legend>
-                            <div class="col-sm-10">
-                              <div class="form-check">
+                            <legend class="col-form-label col-sm-4 pt-0 font-weight-bold">Select provider...</legend>
+                            <div class="col-sm-12 row" style="justify-content: center;">
+                              <div class="form-check col-sm-2">
                                 <input class="form-check-input" type="radio" name="gridRadios" id="aws-radio" value="aws" checked>
                                 <label class="form-check-label" for="aws-radio">
                                   AWS
                                 </label>
                               </div>
-                              <div class="form-check">
+                              <div class="form-check col-sm-2">
                                 <input class="form-check-input" type="radio" name="gridRadios" id="azure-radio" value="azure">
                                 <label class="form-check-label" for="azure-radio">
                                   Azure
                                 </label>
                               </div>
-                              <div class="form-check">
+                              <div class="form-check col-sm-2">
                                 <input class="form-check-input" type="radio" name="gridRadios" id="gcp-radio" value="gcp">
                                 <label class="form-check-label" for="gcp-radio">
                                     Google Cloud
@@ -55,91 +55,120 @@
                           </div>
                         </fieldset>
                         <div class="form-group row">
-                          <div class="col-sm-4">Select contries...</div>
-                          <div class="col-sm-10">
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" id="country-at" checked>
-                              <label class="form-check-label" for="country-at">
-                                AT
-                              </label>
+                          <div class="col-sm-4 font-weight-bold">Select contries...</div>
+                          <div class="col-sm-12">
+                            <div class="form-check form-switch">
+                              <div class="row" style="justify-content: center;">
+                                <div class="col-sm-2">
+                                  <input class="form-check-input" type="checkbox" id="country-at" checked>
+                                  <label class="form-check-label" for="country-at">
+                                      Austria
+                                  </label>
+                                </div>
+                                <div class="col-sm-2">
+                                  <input class="form-check-input" type="checkbox" id="country-be" checked>
+                                  <label class="form-check-label" for="country-be">
+                                      Belgium
+                                  </label>
+                                </div>
+                                <div class="col-sm-2">
+                                  <input class="form-check-input" type="checkbox" id="country-ch" checked>
+                                  <label class="form-check-label" for="country-ch">
+                                    Switzerland
+                                  </label>
+                                </div>
+                              </div>
                               <div class="w-100"></div>
-                              <input class="form-check-input" type="checkbox" id="country-be" checked>
-                              <label class="form-check-label" for="country-be">
-                                BE
-                              </label>
+                              <div class="row"  style="justify-content: center;">
+                                <div class="col-sm-2">
+                                  <input class="form-check-input" type="checkbox" id="country-de" checked>
+                                  <label class="form-check-label" for="country-de">
+                                    Germany
+                                  </label>
+                                </div>
+                                <div class="col-sm-2">
+                                  <input class="form-check-input" type="checkbox" id="country-dk" checked>
+                                  <label class="form-check-label" for="country-dk">
+                                    Denmark
+                                  </label>
+                                </div>
+                                <div class="col-sm-2">
+                                  <input class="form-check-input" type="checkbox" id="country-es" checked>
+                                  <label class="form-check-label" for="country-es">
+                                    Spain
+                                  </label>
+                                </div>
+                              </div>
                               <div class="w-100"></div>
-                              <input class="form-check-input" type="checkbox" id="country-ch" checked>
-                              <label class="form-check-label" for="country-ch">
-                                CH
-                              </label>
+                              <div class="row"  style="justify-content: center;">
+                                <div class="col-sm-2">
+                                  <input class="form-check-input" type="checkbox" id="country-fi" checked>
+                                  <label class="form-check-label" for="country-fi">
+                                    Finland
+                                  </label>
+                                </div>
+                                <div class="col-sm-2">
+                                  <input class="form-check-input" type="checkbox" id="country-fr" checked>
+                                  <label class="form-check-label" for="country-fr">
+                                    France
+                                  </label>
+                                </div>
+                                <div class="col-sm-2">
+                                  <input class="form-check-input" type="checkbox" id="country-ie" checked>
+                                  <label class="form-check-label" for="country-ie">
+                                    Ireland
+                                  </label>
+                                </div>
+                              </div>
                               <div class="w-100"></div>
-                              <input class="form-check-input" type="checkbox" id="country-de" checked>
-                              <label class="form-check-label" for="country-de">
-                                DE
-                              </label>
+                              <div class="row"  style="justify-content: center;">
+                                <div class="col-sm-2">
+                                  <input class="form-check-input" type="checkbox" id="country-it" checked>
+                                  <label class="form-check-label" for="country-it">
+                                    Italy
+                                  </label>
+                                </div>
+                                <div class="col-sm-2">
+                                  <input class="form-check-input" type="checkbox" id="country-nl" checked>
+                                  <label class="form-check-label" for="country-nl">
+                                    Netherlands
+                                  </label>
+                                </div>
+                                <div class="col-sm-2">
+                                  <input class="form-check-input" type="checkbox" id="country-no" checked>
+                                  <label class="form-check-label" for="country-no">
+                                    Norway
+                                  </label>
+                                </div>
+                              </div>
                               <div class="w-100"></div>
-                              <input class="form-check-input" type="checkbox" id="country-dk" checked>
-                              <label class="form-check-label" for="country-dk">
-                                DK
-                              </label>
-                              <div class="w-100"></div>
-                              <input class="form-check-input" type="checkbox" id="country-es" checked>
-                              <label class="form-check-label" for="country-es">
-                                ES
-                              </label>
-                              <div class="w-100"></div>
-                              <input class="form-check-input" type="checkbox" id="country-fi" checked>
-                              <label class="form-check-label" for="country-fi">
-                                FI
-                              </label>
-                              <div class="w-100"></div>
-                              <input class="form-check-input" type="checkbox" id="country-fr" checked>
-                              <label class="form-check-label" for="country-fr">
-                                FR
-                              </label>
-                              <div class="w-100"></div>
-                              <input class="form-check-input" type="checkbox" id="country-ie" checked>
-                              <label class="form-check-label" for="country-ie">
-                                IE
-                              </label>
-                              <div class="w-100"></div>
-                              <input class="form-check-input" type="checkbox" id="country-it" checked>
-                              <label class="form-check-label" for="country-it">
-                                IT
-                              </label>
-                              <div class="w-100"></div>
-                              <input class="form-check-input" type="checkbox" id="country-nl" checked>
-                              <label class="form-check-label" for="country-nl">
-                                NL
-                              </label>
-                              <div class="w-100"></div>
-                              <input class="form-check-input" type="checkbox" id="country-no" checked>
-                              <label class="form-check-label" for="country-no">
-                                NO
-                              </label>
-                              <div class="w-100"></div>
-                              <div class="w-100"></div>
-                              <input class="form-check-input" type="checkbox" id="country-pl" checked>
-                              <label class="form-check-label" for="country-pl">
-                                PL
-                              </label>
-                              <div class="w-100"></div>
-                              <input class="form-check-input" type="checkbox" id="country-se" checked>
-                              <label class="form-check-label" for="country-se">
-                                SE
-                              </label>
-                              <div class="w-100"></div>
-                              <input class="form-check-input" type="checkbox" id="country-uk" checked>
-                              <label class="form-check-label" for="country-uk">
-                                UK
-                              </label>
+                              <div class="row"  style="justify-content: center;">
+                                <div class="col-sm-2">
+                                  <input class="form-check-input" type="checkbox" id="country-pl" checked>
+                                  <label class="form-check-label" for="country-pl">
+                                    Poland
+                                  </label>
+                                </div>
+                                <div class="col-sm-2">
+                                  <input class="form-check-input" type="checkbox" id="country-se" checked>
+                                  <label class="form-check-label" for="country-se">
+                                    Sweden
+                                  </label>
+                                </div>
+                                <div class="col-sm-2">
+                                  <input class="form-check-input" type="checkbox" id="country-uk" checked>
+                                  <label class="form-check-label" for="country-uk">
+                                    Great Britain
+                                  </label>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
                         <div class="form-group row">
-                            <div class="col-sm-4">Nuclear is green...</div>
+                            <div class="col-sm-4 font-weight-bold">Include nuclear energy...</div>
                             <div class="col-sm-10">
-                              <div class="form-check">
+                              <div class="form-check form-switch">
                                 <input class="form-check-input" type="checkbox" id="nuclear">
                                 <label class="form-check-label" for="nuclear">
                                   Yes
