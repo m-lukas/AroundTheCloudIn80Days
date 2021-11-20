@@ -41,7 +41,7 @@ def best_server_location(
 def data_of_region(region: Region) -> List[str]:
     data = []
     try:
-        with open(f"data/{region}-2021-11-20.csv", newline="") as file:
+        with open(f"data/{region}.csv", newline="") as file:
             reader = csv.reader(file)
 
             # skip column names
