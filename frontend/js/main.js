@@ -1,27 +1,49 @@
+awsField = document.getElementById("aws-radio")
+azureField = document.getElementById("azure-radio")
+gcpField = document.getElementById("gcp-radio")
+
+austriaField = document.getElementById("country-at")
+belgiumField = document.getElementById("country-be")
+swissField = document.getElementById("country-ch")
+germanyField = document.getElementById("country-de")
+denmarkField = document.getElementById("country-dk")
+spainField = document.getElementById("country-es")
+finlandField = document.getElementById("country-fi")
+franceField = document.getElementById("country-fr")
+irelandField = document.getElementById("country-ie")
+italyField = document.getElementById("country-it")
+netherlandsField = document.getElementById("country-nl")
+norwayField = document.getElementById("country-no")
+polandField = document.getElementById("country-pl")
+swedenField = document.getElementById("country-se")
+britainField = document.getElementById("country-uk")
+
+nuclearField = document.getElementById("nuclear")
+
 function refresh() {
     tableContent = document.getElementById("table-content")
 
-    awsChecked = document.getElementById("aws-radio").checked
-    azureChecked = document.getElementById("azure-radio").checked
-    gcpChecked = document.getElementById("gcp-radio").checked
+    awsChecked = awsField.checked
+    azureChecked = azureField.checked
+    gcpChecked = gcpField.checked
 
-    austriaChecked = document.getElementById("country-at").checked
-    belgiumChecked = document.getElementById("country-be").checked
-    swissChecked = document.getElementById("country-ch").checked
-    germanyChecked = document.getElementById("country-de").checked
-    denmarkChecked = document.getElementById("country-dk").checked
-    spainChecked = document.getElementById("country-es").checked
-    finlandChecked = document.getElementById("country-fi").checked
-    franceChecked = document.getElementById("country-fr").checked
-    irelandChecked = document.getElementById("country-ie").checked
-    italyChecked = document.getElementById("country-it").checked
-    netherlandsChecked = document.getElementById("country-nl").checked
-    norwayChecked = document.getElementById("country-no").checked
-    polandChecked = document.getElementById("country-pl").checked
-    swedenChecked = document.getElementById("country-se").checked
-    britainChecked = document.getElementById("country-uk").checked
+    austriaChecked = austriaField.checked
+    belgiumChecked = belgiumField.checked
+    swissChecked = swissField.checked
+    germanyChecked = germanyField.checked
+    denmarkChecked = denmarkField.checked
+    spainChecked = spainField.checked
+    finlandChecked = finlandField.checked
+    franceChecked = franceField.checked
+    irelandChecked = irelandField.checked
+    italyChecked = italyField.checked
+    netherlandsChecked = netherlandsField.checked
+    norwayChecked = norwayField.checked
+    polandChecked = polandField.checked
+    swedenChecked = swedenField.checked
+    britainChecked = britainField.checked
 
-    nuclearChecked = document.getElementById("nuclear").checked
+    nuclearChecked = nuclearField.checked
 
     countries = []
     cloudProvider = ""
@@ -103,6 +125,32 @@ function refresh() {
 
                 percentage = Number((percentage).toFixed(2));
 
+                fontColorClass = ""
+
+                if(percentage >= 95){
+                    fontColorClass = "percentage-95"
+                }else if(percentage >= 80){
+                    fontColorClass = "percentage-80"
+                }else if(percentage >= 70){
+                    fontColorClass = "percentage-70"
+                }else if(percentage >= 60){
+                    fontColorClass = "percentage-60"
+                }else if(percentage >= 50){
+                    fontColorClass = "percentage-50"
+                }else if(percentage >= 40){
+                    fontColorClass = "percentage-40"
+                }else if(percentage >= 30){
+                    fontColorClass = "percentage-30"
+                }else if(percentage >= 20){
+                    fontColorClass = "percentage-20"
+                }else if(percentage >= 10){
+                    fontColorClass = "percentage-10"
+                }else if(percentage > 0){
+                    fontColorClass = "percentage-0"
+                }else{
+                    fontColorClass = "percentage-unknown"
+                }
+
                 if(percentage === 0){
                     percentage = "unknown"
                 }else{
@@ -117,7 +165,7 @@ function refresh() {
 						      <th scope="row">${provider}</th>
 						      <td>${region}</td>
 						      <td>${country}</td>
-						      <td>${percentage}</td>
+						      <td class="${fontColorClass} font-weight-bold">${percentage}</td>
 						    </tr>`
             });
         }
