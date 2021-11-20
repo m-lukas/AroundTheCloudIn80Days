@@ -3,12 +3,12 @@ from typing import List, Set, Tuple
 
 
 Region = str
-GreenEnergyShare = int
+GreenEnergyShare = float
 
 
 def best_server_location(
     regions_to_consider: Set[Region], nuclear_is_green=False
-) -> List[Region]:
+) -> List[Tuple[Region, GreenEnergyShare]]:
     "Calculate the region with the best available energy mix."
 
     ranking: List[Tuple[Region, GreenEnergyShare]] = []
