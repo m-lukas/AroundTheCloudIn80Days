@@ -6,10 +6,16 @@ Region = str
 GreenEnergyShare = int
 
 
-def best_server_location(regions_to_consider: Set[Region]) -> List[Region]:
+def best_server_location(
+    regions_to_consider: Set[Region], nuclear_is_green=False
+) -> List[Region]:
     "Calculate the region with the best available energy mix."
 
     ranking: List[Tuple[Region, GreenEnergyShare]] = []
+
+    GREEN_ENERGY_SOURCES = [0, 8, 9, 11, 12, 13, 16, 17, 19, 20]
+    if nuclear_is_green:
+        GREEN_ENERGY_SOURCES.append(14)
 
     # calculate share of green energy for each region
     for region in regions_to_consider:
@@ -30,9 +36,6 @@ def best_server_location(regions_to_consider: Set[Region]) -> List[Region]:
     sorted_ranking = sorted(ranking, key=lambda x: x[1], reverse=True)
 
     return sorted_ranking
-
-
-GREEN_ENERGY_SOURCES: List[int] = [0, 8, 9, 11, 12, 13, 16, 17, 19, 20]
 
 
 def data_of_region(region: Region) -> List[str]:
