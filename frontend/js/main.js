@@ -111,7 +111,7 @@ function refresh() {
     }
 
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", 'http://AroundTheCloudIn80Days-dev.eu-central-1.elasticbeanstalk.com/ranking', true);
+    xhr.open("POST", 'https://aroundthecloud.netlify.app/api/ranking', true);
 
     xhr.setRequestHeader("Content-Type", "application/json");
 
