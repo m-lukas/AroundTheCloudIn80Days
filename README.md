@@ -5,13 +5,13 @@ Make cloud computing more sustainable by maximizing your usage of renewable ener
 ## Overview
 
 Our application consists of three components:
-- backend
-- frontend
+- backend: https://aroundthecloud.netlify.app/
+- frontend: https://aroundthecloud.netlify.app/api/docs
 - updater
 
 Based on the [most recent energy data](https://transparency.entsoe.eu/generation/r2/actualGenerationPerProductionType/show), the backend calculates the datacenter with the currently highest share of green energy available. The frontend accesses the information of the backend and displays it in a human-understandable way.
 
-In the best case we wouldn't need the updater. It just exists, since we can't get the API-key of the ENTSO-E live-API on the weekend and therefore it simulates getting live data.
+In best case we wouldn't need the updater. It just exists, since we can't get the API-key of the ENTSO-E live-API on the weekend and therefore it simulates getting live data.
 
 ## Setup
 
