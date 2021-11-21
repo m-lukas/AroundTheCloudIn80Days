@@ -1,4 +1,4 @@
-# Around the world in eighty days! 🌎
+# Around the cloud in eighty days! 🌎
 
 Make cloud computing more sustainable by maximizing your usage of renewable energy!
 
