@@ -1,1 +1,2 @@
 /api/* http://aroundthecloudin80days-dev.eu-central-1.elasticbeanstalk.com/:splat 200!
+/openapi.json /api/openapi.json
