@@ -1,2 +1,23 @@
-"Area","MTU","Biomass  - Actual Aggregated [MW]","Fossil Brown coal/Lignite  - Actual Aggregated [MW]","Fossil Coal-derived gas  - Actual Aggregated [MW]","Fossil Gas  - Actual Aggregated [MW]","Fossil Hard coal  - Actual Aggregated [MW]","Fossil Oil  - Actual Aggregated [MW]","Fossil Oil shale  - Actual Aggregated [MW]","Fossil Peat  - Actual Aggregated [MW]","Geothermal  - Actual Aggregated [MW]","Hydro Pumped Storage  - Actual Aggregated [MW]","Hydro Pumped Storage  - Actual Consumption [MW]","Hydro Run-of-river and poundage  - Actual Aggregated [MW]","Hydro Water Reservoir  - Actual Aggregated [MW]","Marine  - Actual Aggregated [MW]","Nuclear  - Actual Aggregated [MW]","Other  - Actual Aggregated [MW]","Other renewable  - Actual Aggregated [MW]","Solar  - Actual Aggregated [MW]","Waste  - Actual Aggregated [MW]","Wind Offshore  - Actual Aggregated [MW]","Wind Onshore  - Actual Aggregated [MW]"
-"Ireland (IE)","19.11.2021 00:00 - 19.11.2021 00:30 (CET)","n/e","n/e","n/e","N/A","N/A","N/A","n/e","N/A","n/e","N/A","N/A","N/A","n/e","n/e","n/e","N/A","n/e","n/e","n/e","n/e","N/A"
+Area,MTU,Biomass  - Actual Aggregated [MW],Fossil Brown coal/Lignite  - Actual Aggregated [MW],Fossil Coal-derived gas  - Actual Aggregated [MW],Fossil Gas  - Actual Aggregated [MW],Fossil Hard coal  - Actual Aggregated [MW],Fossil Oil  - Actual Aggregated [MW],Fossil Oil shale  - Actual Aggregated [MW],Fossil Peat  - Actual Aggregated [MW],Geothermal  - Actual Aggregated [MW],Hydro Pumped Storage  - Actual Aggregated [MW],Hydro Pumped Storage  - Actual Consumption [MW],Hydro Run-of-river and poundage  - Actual Aggregated [MW],Hydro Water Reservoir  - Actual Aggregated [MW],Marine  - Actual Aggregated [MW],Nuclear  - Actual Aggregated [MW],Other  - Actual Aggregated [MW],Other renewable  - Actual Aggregated [MW],Solar  - Actual Aggregated [MW],Waste  - Actual Aggregated [MW],Wind Offshore  - Actual Aggregated [MW],Wind Onshore  - Actual Aggregated [MW]
+Ireland (IE),19.11.2021 00:00 - 19.11.2021 00:30 (CET),n/e,n/e,n/e,N/A,N/A,N/A,n/e,N/A,n/e,N/A,N/A,N/A,n/e,n/e,n/e,N/A,n/e,n/e,n/e,n/e,N/A
+Ireland (IE),19.11.2021 00:30 - 19.11.2021 01:00 (CET),n/e,n/e,n/e,N/A,N/A,N/A,n/e,N/A,n/e,N/A,N/A,N/A,n/e,n/e,n/e,N/A,n/e,n/e,n/e,n/e,N/A
+Ireland (IE),19.11.2021 01:00 - 19.11.2021 01:30 (CET),n/e,n/e,n/e,N/A,N/A,N/A,n/e,N/A,n/e,N/A,N/A,N/A,n/e,n/e,n/e,N/A,n/e,n/e,n/e,n/e,N/A
+Ireland (IE),19.11.2021 01:30 - 19.11.2021 02:00 (CET),n/e,n/e,n/e,N/A,N/A,N/A,n/e,N/A,n/e,N/A,N/A,N/A,n/e,n/e,n/e,N/A,n/e,n/e,n/e,n/e,N/A
+Ireland (IE),19.11.2021 02:00 - 19.11.2021 02:30 (CET),n/e,n/e,n/e,N/A,N/A,N/A,n/e,N/A,n/e,N/A,N/A,N/A,n/e,n/e,n/e,N/A,n/e,n/e,n/e,n/e,N/A
+Ireland (IE),19.11.2021 02:30 - 19.11.2021 03:00 (CET),n/e,n/e,n/e,N/A,N/A,N/A,n/e,N/A,n/e,N/A,N/A,N/A,n/e,n/e,n/e,N/A,n/e,n/e,n/e,n/e,N/A
+Ireland (IE),19.11.2021 03:00 - 19.11.2021 03:30 (CET),n/e,n/e,n/e,N/A,N/A,N/A,n/e,N/A,n/e,N/A,N/A,N/A,n/e,n/e,n/e,N/A,n/e,n/e,n/e,n/e,N/A
+Ireland (IE),19.11.2021 03:30 - 19.11.2021 04:00 (CET),n/e,n/e,n/e,N/A,N/A,N/A,n/e,N/A,n/e,N/A,N/A,N/A,n/e,n/e,n/e,N/A,n/e,n/e,n/e,n/e,N/A
+Ireland (IE),19.11.2021 04:00 - 19.11.2021 04:30 (CET),n/e,n/e,n/e,N/A,N/A,N/A,n/e,N/A,n/e,N/A,N/A,N/A,n/e,n/e,n/e,N/A,n/e,n/e,n/e,n/e,N/A
+Ireland (IE),19.11.2021 04:30 - 19.11.2021 05:00 (CET),n/e,n/e,n/e,N/A,N/A,N/A,n/e,N/A,n/e,N/A,N/A,N/A,n/e,n/e,n/e,N/A,n/e,n/e,n/e,n/e,N/A
+Ireland (IE),19.11.2021 05:00 - 19.11.2021 05:30 (CET),n/e,n/e,n/e,N/A,N/A,N/A,n/e,N/A,n/e,N/A,N/A,N/A,n/e,n/e,n/e,N/A,n/e,n/e,n/e,n/e,N/A
+Ireland (IE),19.11.2021 05:30 - 19.11.2021 06:00 (CET),n/e,n/e,n/e,N/A,N/A,N/A,n/e,N/A,n/e,N/A,N/A,N/A,n/e,n/e,n/e,N/A,n/e,n/e,n/e,n/e,N/A
+Ireland (IE),19.11.2021 06:00 - 19.11.2021 06:30 (CET),n/e,n/e,n/e,N/A,N/A,N/A,n/e,N/A,n/e,N/A,N/A,N/A,n/e,n/e,n/e,N/A,n/e,n/e,n/e,n/e,N/A
+Ireland (IE),19.11.2021 06:30 - 19.11.2021 07:00 (CET),n/e,n/e,n/e,N/A,N/A,N/A,n/e,N/A,n/e,N/A,N/A,N/A,n/e,n/e,n/e,N/A,n/e,n/e,n/e,n/e,N/A
+Ireland (IE),19.11.2021 07:00 - 19.11.2021 07:30 (CET),n/e,n/e,n/e,N/A,N/A,N/A,n/e,N/A,n/e,N/A,N/A,N/A,n/e,n/e,n/e,N/A,n/e,n/e,n/e,n/e,N/A
+Ireland (IE),19.11.2021 07:30 - 19.11.2021 08:00 (CET),n/e,n/e,n/e,N/A,N/A,N/A,n/e,N/A,n/e,N/A,N/A,N/A,n/e,n/e,n/e,N/A,n/e,n/e,n/e,n/e,N/A
+Ireland (IE),19.11.2021 08:00 - 19.11.2021 08:30 (CET),n/e,n/e,n/e,N/A,N/A,N/A,n/e,N/A,n/e,N/A,N/A,N/A,n/e,n/e,n/e,N/A,n/e,n/e,n/e,n/e,N/A
+Ireland (IE),19.11.2021 08:30 - 19.11.2021 09:00 (CET),n/e,n/e,n/e,N/A,N/A,N/A,n/e,N/A,n/e,N/A,N/A,N/A,n/e,n/e,n/e,N/A,n/e,n/e,n/e,n/e,N/A
+Ireland (IE),19.11.2021 09:00 - 19.11.2021 09:30 (CET),n/e,n/e,n/e,N/A,N/A,N/A,n/e,N/A,n/e,N/A,N/A,N/A,n/e,n/e,n/e,N/A,n/e,n/e,n/e,n/e,N/A
+Ireland (IE),19.11.2021 09:30 - 19.11.2021 10:00 (CET),n/e,n/e,n/e,N/A,N/A,N/A,n/e,N/A,n/e,N/A,N/A,N/A,n/e,n/e,n/e,N/A,n/e,n/e,n/e,n/e,N/A
+Ireland (IE),19.11.2021 10:00 - 19.11.2021 10:30 (CET),n/e,n/e,n/e,N/A,N/A,N/A,n/e,N/A,n/e,N/A,N/A,N/A,n/e,n/e,n/e,N/A,n/e,n/e,n/e,n/e,N/A
+Ireland (IE),19.11.2021 10:30 - 19.11.2021 11:00 (CET),n/e,n/e,n/e,N/A,N/A,N/A,n/e,N/A,n/e,N/A,N/A,N/A,n/e,n/e,n/e,N/A,n/e,n/e,n/e,n/e,N/A
