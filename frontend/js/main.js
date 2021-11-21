@@ -111,7 +111,7 @@ function refresh() {
     }
 
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", 'http://127.0.0.1:8000/ranking', true);
+    xhr.open("POST", 'http://AroundTheCloudIn80Days-dev.eu-central-1.elasticbeanstalk.com/ranking', true);
 
     xhr.setRequestHeader("Content-Type", "application/json");
 
